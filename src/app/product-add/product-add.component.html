@@ -1,0 +1,76 @@
+<!-- // doi ti, oke cc -->
+
+<div class="container mx-auto">
+  <form class="mt-8 w-8/12 mx-auto">
+    <div class="form-group">
+      <label class="px-1 block text-sm text-gray-600">Tên sản phẩm</label>
+      <input
+        placeholder=""
+        type="text"
+        [(ngModel)]="product.name"
+        name="name"
+        class="
+          text-md
+          block
+          px-3
+          py-2
+          rounded-lg
+          w-full
+          bg-white
+          border-2 border-gray-300
+          placeholder-gray-600
+          shadow-md
+          focus:placeholder-gray-500
+          focus:bg-white
+          focus:border-gray-600
+          focus:outline-none
+        "
+      />
+    </div>
+    <div class="form-group mt-5">
+      <label class="px-1 block text-sm text-gray-600">price</label>
+      <input
+        placeholder=""
+        type="number"
+        name="price"
+        [(ngModel)]="product.price"
+        class="
+          text-md
+          block
+          px-3
+          py-2
+          rounded-lg
+          w-full
+          bg-white
+          border-2 border-gray-300
+          placeholder-gray-600
+          shadow-md
+          focus:placeholder-gray-500
+          focus:bg-white
+          focus:border-gray-600
+          focus:outline-none
+        "
+        min="0"
+      />
+    </div>
+    <button
+      type="submit"
+      class="
+        bg-green-500
+        text-white
+        px-6
+        py-2
+        rounded
+        font-medium
+        mt-5
+        hover:bg-green-600
+        transition
+        duration-200
+        each-in-out
+      "
+      (click)="onAddProduct()"
+    >
+      Thêm Sản Phẩm
+    </button>
+  </form>
+</div>
